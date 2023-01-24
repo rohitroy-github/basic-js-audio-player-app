@@ -21,6 +21,12 @@
     <h1>JS Audio Player</h1>
 
     <div class="music-container" id="music-container">
+      <audio src="" id="audio"></audio>
+
+      <div class="img-container">
+        <img src="images/song-1.jpg" alt="music-cover" id="cover" />
+      </div>
+
       <div class="music-info">
         <h4 id="title"></h4>
         <div class="progress-container" id="progress-container">
@@ -28,11 +34,6 @@
         </div>
       </div>
 
-      <audio src="music/ukulele.mp3" id="audio"></audio>
-
-      <div class="img-container">
-        <img src="images/song-1.jpg" alt="music-cover" id="cover" />
-      </div>
       <div class="navigation">
         <button id="prev" class="action-btn">
           <i class="fas fa-backward"></i>
@@ -44,14 +45,14 @@
           <i class="fas fa-forward"></i>
         </button>
       </div>
-    </div>
 
-    <h6 class="footer">
-      Rohit Roy | 2023 |
-      <a href="https://github.com/rohitroy-github/js-audio-player-project"
-        >Project</a
-      >
-    </h6>
+      <h6 class="footer">
+        Rohit Roy | 2023 |
+        <a href="https://github.com/rohitroy-github/js-audio-player-project"
+          >Project</a
+        >
+      </h6>
+    </div>
 
     <script src="index.js"></script>
   </body>
