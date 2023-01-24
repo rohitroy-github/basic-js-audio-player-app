@@ -1,4 +1,4 @@
-This is basic <b>Audio Player Project</b> made using <b>Javascript, HTML & CSS</b> as a part of practicing the <b>< audio ></b> element of HTML </>
+This is basic <a href="https://basic-js-audio-player-app.netlify.app/"><b>Audio Player Project</b></a> made using <b>Javascript, HTML & CSS</b> as a part of practicing the <b>< audio ></b> element of HTML </>
 
 There's a screenshot from the project >>>
 
@@ -9,8 +9,8 @@ This project is currently under development and I'm open to improvising the app 
 <b>To run the app locally >>></b>
 
 <ul>
-<li>Download the source code </></li>
-<li>[Optional] Add new songs and cover images for the songs </></li>
-<li>[Optional] Update the 'songs' array according to the newly added songs in the [index.js] file </></li>
-<li>Run the [index.html] file </></li>
+<li>Download the source code. </></li>
+<li>[Optional] Add new songs and cover images for the songs. </></li>
+<li>[Optional] Update the 'songs' array according to the newly added songs in the [index.js] file. </></li>
+<li>Run the [index.html] file. </></li>
 </ul>
