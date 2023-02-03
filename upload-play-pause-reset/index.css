@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  font-family: 'Montserrat', sans-serif;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 25%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: gray;
+  border-radius: 15px;
+  margin: auto;
+  padding: 25px;
+}
+
+.play-btn {
+  padding: 10px;
+  margin: 10px;
+  width: 75%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pause-btn {
+  padding: 10px;
+  margin: 10px;
+  width: 75%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.input-btn {
+  padding: 10px;
+  margin: 10px;
+  width: 75%;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.reset-btn {
+  padding: 10px;
+  margin: 10px;
+  width: 30%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
