@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    #ec1ae6,
+    #c82bea,
+    #a036eb,
+    #713eea,
+    #2642e6
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+.container {
+  font-family: 'Montserrat', sans-serif;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 30%;
+  height: 30%; */
+  width: 350px;
+  height: 250px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: white;
+  border-radius: 15px;
+  margin: auto;
+  padding: 3%;
+}
+
+.play-btn {
+  padding: 10px;
+  margin: 10px;
+  width: 75%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+}
+
+.pause-btn {
+  padding: 10px;
+  margin: 10px;
+  width: 75%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+}
+
+.input-btn {
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  width: 80%;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  border: 2px solid black;
+  color: black;
+}
+
+.reset-btn {
+  padding: 10px;
+  margin: 10px;
+  width: 30%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+}
