@@ -42,6 +42,12 @@ body {
   padding: 3%;
 }
 
+.prev-next-btns {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
 .play-btn {
   padding: 10px;
   margin: 10px;
@@ -66,6 +72,12 @@ body {
   border: 2px solid black;
   color: white;
   background-color: black;
+}
+
+.play-pause-btns {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
 }
 
 .input-btn {
