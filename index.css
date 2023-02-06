@@ -166,3 +166,21 @@ body {
   text-decoration: none;
   color: inherit;
 }
+
+.heading-tabs {
+  display: flex;
+  flex-direction: row;
+}
+
+.tab {
+  padding: 10px;
+  margin: 10px;
+  width: 75%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+}
