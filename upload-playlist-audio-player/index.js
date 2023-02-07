@@ -1,32 +1,55 @@
-const fileInput = document.querySelector("#file-input");
-const playButton = document.querySelector("#play-button");
-const pauseButton = document.querySelector("#pause-button");
-const audioPlayer = document.querySelector("#audio-player");
-const resetButton = document.querySelector("#reset-button");
+const fileInput = document.getElementById("fileInput");
+const playBtn = document.getElementById("playBtn");
+const pauseBtn = document.getElementById("pauseBtn");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+const audioElement = document.getElementById("audioElement");
 
-let context = new (window.AudioContext || window.webkitAudioContext)();
-let source = null;
+let audioFiles;
+let currentTrack = 0;
 
-// EventListenerForCapturingFileChange
-fileInput.addEventListener("change", function () {
-  const file = fileInput.files[0];
-  const fileURL = URL.createObjectURL(file);
-
-  // settingAudioSource
-  audioPlayer.src = fileURL;
+fileInput.addEventListener("change", (e) => {
+  audioFiles = Array.from(e.target.files);
+  loadAudio(currentTrack);
 });
 
-// eventListenerForPlayButton
-playButton.addEventListener("click", function () {
-  audioPlayer.play();
+playBtn.addEventListener("click", () => {
+  audioElement.play();
 });
 
-// eventListenerForPauseButton
-pauseButton.addEventListener("click", function () {
-  audioPlayer.pause();
+pauseBtn.addEventListener("click", () => {
+  audioElement.pause();
 });
+
+prevBtn.addEventListener("click", () => {
+  if (currentTrack === 0) {
+    currentTrack = audioFiles.length - 1;
+  } else {
+    currentTrack--;
+  }
+  loadAudio(currentTrack);
+});
+
+nextBtn.addEventListener("click", () => {
+  if (currentTrack === audioFiles.length - 1) {
+    currentTrack = 0;
+  } else {
+    currentTrack++;
+  }
+  loadAudio(currentTrack);
+});
+
+function loadAudio(index) {
+  audioElement.src = URL.createObjectURL(audioFiles[index]);
+  audioElement.load();
+  // audioElement.play();
+}
+
+const resetBtn = document.getElementById("resetBtn");
 
 // eventListenerForResetButton
-resetButton.addEventListener("click", function () {
+resetBtn.addEventListener("click", function () {
+  audioElement.pause();
+  audioFiles.length = 0;
   fileInput.value = "";
 });

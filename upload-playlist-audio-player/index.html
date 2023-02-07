@@ -9,17 +9,17 @@
   </head>
   <body>
     <div class="container">
-      <input type="file" accept="audio/*" id="file-input" class="input-btn" />
+      <audio id="audioElement"></audio>
+      <input type="file" id="fileInput" class="input-btn" multiple />
       <div class="prev-next-btns">
-        <button id="prev-button" class="play-btn"><<< Prev</button>
-        <button id="next-button" class="pause-btn">Next >>></button>
+        <button id="prevBtn" class="play-btn"><<< Prev</button>
+        <button id="nextBtn" class="pause-btn">Next >>></button>
       </div>
       <div class="play-pause-btns">
-        <button id="play-button" class="play-btn">Play</button>
-        <button id="pause-button" class="pause-btn">Pause</button>
+        <button id="playBtn" class="play-btn">Play</button>
+        <button id="pauseBtn" class="pause-btn">Pause</button>
       </div>
-      <audio id="audio-player"></audio>
-      <button id="reset-button" class="reset-btn">Reset</button>
+      <button id="resetBtn" class="reset-btn">Reset</button>
     </div>
 
     <script src="./index.js"></script>
