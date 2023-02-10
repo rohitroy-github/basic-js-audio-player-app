@@ -4,6 +4,7 @@ const pauseBtn = document.getElementById("pauseBtn");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 const audioElement = document.getElementById("audioElement");
+const songDisplay = document.getElementById("songDisplay");
 
 let audioFiles;
 let currentTrack = 0;
@@ -11,6 +12,8 @@ let currentTrack = 0;
 fileInput.addEventListener("change", (e) => {
   audioFiles = Array.from(e.target.files);
   loadAudio(currentTrack);
+
+  songDisplay.innerHTML = audioFiles[currentTrack].name;
 });
 
 playBtn.addEventListener("click", () => {
@@ -42,6 +45,9 @@ nextBtn.addEventListener("click", () => {
 function loadAudio(index) {
   audioElement.src = URL.createObjectURL(audioFiles[index]);
   audioElement.load();
+
+  songDisplay.innerHTML = audioFiles[currentTrack].name;
+
   // audioElement.play();
 }
 
