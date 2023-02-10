@@ -30,7 +30,7 @@ body {
   /* width: 30%;
   height: 30%; */
   width: 350px;
-  height: 250px;
+  /* height: 250px; */
 
   display: flex;
   align-items: center;
@@ -48,10 +48,23 @@ body {
   width: 80%;
 }
 
+.song-display-container {
+  display: flex;
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+}
+
 .play-btn {
   padding: 10px;
   margin: 10px;
-  width: 75%;
+  width: 100%;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -64,7 +77,7 @@ body {
 .pause-btn {
   padding: 10px;
   margin: 10px;
-  width: 75%;
+  width: 100%;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -83,7 +96,7 @@ body {
 .input-btn {
   padding: 10px;
   margin: 10px;
-  color: white;
+  color: #ffffff;
   width: 80%;
   font-weight: 700;
   text-align: center;
